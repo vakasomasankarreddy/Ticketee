@@ -1,0 +1,63 @@
+I, [2018-03-21T17:35:58.641783 #11436]  INFO -- : Started GET "/projects/not-here" for ::1 at 2018-03-21 17:35:58 +0530
+I, [2018-03-21T17:35:58.641783 #11436]  INFO -- : Processing by ProjectsController#show as HTML
+I, [2018-03-21T17:35:58.641783 #11436]  INFO -- :   Parameters: {"id"=>"not-here"}
+I, [2018-03-21T17:35:58.657411 #11436]  INFO -- : Completed 500 Internal Server Error in 16ms
+F, [2018-03-21T17:35:58.657411 #11436] FATAL -- : 
+ActiveRecord::StatementInvalid (Could not find table 'projects'):
+  app/controllers/projects_controller.rb:20:in `show'
+
+
+I, [2018-03-21T17:36:28.761251 #11436]  INFO -- : Started GET "/" for ::1 at 2018-03-21 17:36:28 +0530
+I, [2018-03-21T17:36:28.776940 #11436]  INFO -- : Processing by ProjectsController#index as HTML
+D, [2018-03-21T17:36:28.839383 #11436] DEBUG -- :   [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+E, [2018-03-21T17:36:28.839383 #11436] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2018-03-21T17:36:28.855011 #11436]  INFO -- :   Rendered projects/index.html.erb within layouts/application (15.6ms)
+I, [2018-03-21T17:36:28.870636 #11436]  INFO -- : Completed 500 Internal Server Error in 94ms
+F, [2018-03-21T17:36:28.870636 #11436] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    3: <%= link_to "New Project", new_project_path %>
+    4: 
+    5: <div id="projects">
+    6:   <% @projects.each do |project| %>
+    7:     <h2><%= link_to project.name, project %></h2>
+    8:     <p><%= project.description %></p>
+    9:   <% end %>
+  app/views/projects/index.html.erb:6:in `_app_views_projects_index_html_erb__1713983981_52881420'
+
+
+I, [2018-03-21T17:36:30.386479 #11436]  INFO -- : Started GET "/" for ::1 at 2018-03-21 17:36:30 +0530
+I, [2018-03-21T17:36:30.386479 #11436]  INFO -- : Processing by ProjectsController#index as HTML
+D, [2018-03-21T17:36:30.386479 #11436] DEBUG -- :   [1m[35mProject Load (0.0ms)[0m  SELECT "projects".* FROM "projects"
+E, [2018-03-21T17:36:30.386479 #11436] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2018-03-21T17:36:30.402078 #11436]  INFO -- :   Rendered projects/index.html.erb within layouts/application (15.6ms)
+I, [2018-03-21T17:36:30.402078 #11436]  INFO -- : Completed 500 Internal Server Error in 16ms
+F, [2018-03-21T17:36:30.402078 #11436] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    3: <%= link_to "New Project", new_project_path %>
+    4: 
+    5: <div id="projects">
+    6:   <% @projects.each do |project| %>
+    7:     <h2><%= link_to project.name, project %></h2>
+    8:     <p><%= project.description %></p>
+    9:   <% end %>
+  app/views/projects/index.html.erb:6:in `_app_views_projects_index_html_erb__1713983981_52881420'
+
+
+I, [2018-03-21T17:36:31.808450 #11436]  INFO -- : Started GET "/" for ::1 at 2018-03-21 17:36:31 +0530
+I, [2018-03-21T17:36:31.808450 #11436]  INFO -- : Processing by ProjectsController#index as HTML
+D, [2018-03-21T17:36:31.808450 #11436] DEBUG -- :   [1m[36mProject Load (0.0ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+E, [2018-03-21T17:36:31.808450 #11436] ERROR -- : SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"
+I, [2018-03-21T17:36:31.824076 #11436]  INFO -- :   Rendered projects/index.html.erb within layouts/application (15.6ms)
+I, [2018-03-21T17:36:31.824076 #11436]  INFO -- : Completed 500 Internal Server Error in 16ms
+F, [2018-03-21T17:36:31.824076 #11436] FATAL -- : 
+ActionView::Template::Error (SQLite3::SQLException: no such table: projects: SELECT "projects".* FROM "projects"):
+    3: <%= link_to "New Project", new_project_path %>
+    4: 
+    5: <div id="projects">
+    6:   <% @projects.each do |project| %>
+    7:     <h2><%= link_to project.name, project %></h2>
+    8:     <p><%= project.description %></p>
+    9:   <% end %>
+  app/views/projects/index.html.erb:6:in `_app_views_projects_index_html_erb__1713983981_52881420'
+
+
